@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@id/iv_item_message_picurl"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/icon_message" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 公告名称 -->
+
+            <TextView
+                android:id="@id/tv_item_message_title"
+                style="@style/item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zhuangye" />
+             <!--删除 -->
+
+            <TextView
+                android:id="@id/tv_item_message_delete_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/text_delete"
+                android:textColor="@color/main_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <!-- 时间 -->
+
+        <TextView
+            android:id="@id/tv_item_message_systime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2012-12-12"
+            android:textColor="@color/main_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@id/tv_item_message_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:text="12" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    android:orientation="vertical" >
+
+    <!-- 设置头部 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_color"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/top_tip_message"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@id/et_new_message_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:padding="3dp"
+            android:layout_weight="2"
+            android:background="@drawable/bg_shape_edit"
+            android:hint="标题"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@id/et_new_message_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/bg_shape_edit"
+            android:gravity="left|top"
+            android:padding="3dp"
+            android:hint="新公告"
+            android:lines="3"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@id/btn_send_new_message"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/bg_btn_shape_round_green"
+            android:text="@string/btn_text_send"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!-- 公告列表 -->
+
+    <ListView
+        android:id="@id/lv_message_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/white" >
+    </ListView>
+
+</LinearLayout>

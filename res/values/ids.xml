@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="et_login_worknum" type="id"/>
+    <item name="et_login_password" type="id"/>
+    <item name="btn_login" type="id"/>
+    <item name="tv_no_account_text" type="id"/>
+    <item name="tv_go_register" type="id"/>
+    <item name="iv_register_arrow_back" type="id"/>
+    <item name="et_register_worknum" type="id"/>
+    <item name="et_register_password" type="id"/>
+    <item name="et_register_repassword" type="id"/>
+    <item name="et_register_phone" type="id"/>
+    <item name="tv_register_class_text" type="id"/>
+    <item name="sn_register_classname" type="id"/>
+    <item name="tv_register_picurl_text" type="id"/>
+    <item name="iv_register_picurl" type="id"/>
+    <item name="btn_register" type="id"/>
+    <item name="iv_add_user_picurl" type="id"/>
+    <item name="tv_register_user_email" type="id"/>
+     <item name="et_register_username" type="id"/>
+    
+    <item name="rl_main_content" type="id"/>
+    <item name="ll_main_bottom_bar" type="id"/>
+    <item name="ll_menu_message" type="id"/>
+    <item name="iv_menu_message_icon" type="id"/>
+    <item name="tv_menu_message_text" type="id"/>
+    <item name="ll_menu_attendance" type="id"/>
+    <item name="iv_menu_attendance_icon" type="id"/>
+    <item name="tv_menu_attendance_text" type="id"/>
+    <item name="ll_menu_chat" type="id"/>
+    <item name="iv_menu_chat_icon" type="id"/>
+    <item name="tv_menu_chat_text" type="id"/>
+    <item name="ll_menu_student" type="id"/>
+    <item name="iv_menu_student_icon" type="id"/>
+    <item name="tv_menu_student_text" type="id"/>
+    <item name="lv_message_list" type="id"/>
+    
+    <item name="iv_item_message_picurl" type="id"/>
+    <item name="tv_item_message_title" type="id"/>
+    <item name="tv_item_message_delete_text" type="id"/>
+    <item name="tv_item_message_systime" type="id"/>
+    <item name="tv_item_message_content" type="id"/>
+    <item name="et_new_message_title" type="id"/>
+    <item name="et_new_message_content" type="id"/>
+    <item name="btn_send_new_message" type="id"/>
+    <item name="ti_student_tab_title" type="id"/>
+    <item name="vp_student_tab_viewpager" type="id"/>
+    <item name="lv_student_list" type="id"/>
+    <item name="tv_item_student_name_text" type="id"/>
+    <item name="tv_item_student_stunum_text" type="id"/>
+    <item name="tv_item_student_sex_text" type="id"/>
+    <item name="tv_item_student_worksnum_text" type="id"/>
+    <item name="tv_item_student_operate_text" type="id"/>
+    <item name="tv_item_student_name" type="id"/>
+    <item name="tv_item_student_stunum" type="id"/>
+    <item name="tv_item_student_sex" type="id"/>
+    <item name="tv_item_student_worksnum" type="id"/>
+    <item name="tv_item_student_operate" type="id"/>
+    <item name="top_tip_add_studnet" type="id"/>
+    <item name="ll_add_student" type="id"/>
+    <item name="et_add_student_name" type="id"/>
+    <item name="et_add_student_stunum" type="id"/>
+    <item name="rg_add_student_sex" type="id"/>
+    <item name="rb_add_student_sex_male" type="id"/>
+    <item name="rb_add_student_sex_female" type="id"/>
+    <item name="btn_save_add_student" type="id"/>
+    <item name="btn_cancel_add_student" type="id"/>
+    <item name="lv_student_parent_list" type="id"/>
+    <item name="tv_item_student_parent_name" type="id"/>
+    <item name="tv_item_student_parent_stunum" type="id"/>
+    <item name="iv_chat_back_arrow" type="id"/>
+    <item name="lv_all_chat_list" type="id"/>
+    <item name="et_new_chat_content" type="id"/>
+    <item name="btn_send_new_chat" type="id"/>
+    <item name="btn_send_student_attendance" type="id"/>
+    <item name="lv_student_attendance_list" type="id"/>
+    <item name="tv_item_student_attendance_name" type="id"/>
+    <item name="tv_item_student_attendance_stunum" type="id"/>
+    <item name="sn_item_student_attendance_type" type="id"/>
+    <item name="ll_search_student" type="id"/>
+    <item name="rl_search_student" type="id"/>
+    <item name="iv_icon_search_student" type="id"/>
+    <item name="et_search_student" type="id"/>
+    <item name="tv_search_diary_btn" type="id"/>
+    <item name="et_new_works_name" type="id"/>
+    <item name="iv_et_new_works_picurl" type="id"/>
+    <item name="btn_save_new_works" type="id"/>
+    <item name="lv_student_works_list" type="id"/>
+    <item name="siv_item_works_picurl" type="id"/>
+    <item name="tv_item_works_name" type="id"/>
+    <item name="tv_item_works_systime" type="id"/>
+     <item name="siv_item_chat_user_picurl" type="id"/>
+    <item name="tv_item_chat_user_name" type="id"/>
+    <item name="tv_item_chat_systime" type="id"/>
+    <item name="tv_item_chat_content" type="id"/>
+    <item name="tv_search_student_btn" type="id"/>
+    <item name="tv_item_student_delete" type="id"/>
+    <item name="iv_add_new_works_back_arrow" type="id"/>
+   
+   
+  
+    
+
+</resources>

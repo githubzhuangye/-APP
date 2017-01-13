@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="attendance_types">
+　　                                <item>已到</item>
+　　                                <item>事假</item>
+　　                                <item>病假</item>
+　　    </string-array>
+    <string-array name="teach_class">
+　　                 <item>1班</item>
+　　                  <item>2班</item>
+        <item>3班</item>
+        <item>4班</item>
+        <item>5班</item>
+　　    </string-array>
+
+</resources>

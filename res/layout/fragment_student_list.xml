@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_f8f8f8"
+    android:orientation="vertical" >
+
+    <!-- 设置头部 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_color"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/top_tip_student_list"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <!-- 学生姓名 -->
+
+        <TextView
+            android:id="@id/tv_item_student_name_text"
+            style="@style/item_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/gray_333"
+            android:textSize="14sp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="@string/text_student_name" />
+        <!-- 学生学号 -->
+
+        <TextView
+            android:id="@id/tv_item_student_stunum_text"
+             android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/text_student_stunum"
+           android:gravity="center_horizontal"
+            android:textColor="@color/gray_333"
+            android:textSize="14sp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"/>
+
+        <!-- 性别-->
+
+        <TextView
+            android:id="@id/tv_item_student_sex_text"
+             android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/text_student_sex"
+            android:gravity="center_horizontal"
+            android:textColor="@color/gray_333"
+            android:textSize="14sp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp" />
+		<!-- 作品-->
+        <TextView
+            android:id="@id/tv_item_student_worksnum_text"
+             android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/text_student_worksnum"
+            android:gravity="center_horizontal"
+            android:textColor="@color/gray_333"
+            android:textSize="14sp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp" />
+        <!-- 操作-->
+        <TextView
+            android:id="@id/tv_item_student_operate_text"
+             android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/text_oprate"
+            android:gravity="center_horizontal"
+            android:textColor="@color/gray_333"
+            android:textSize="14sp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"/>
+    </LinearLayout>
+    <!-- 学生列表 -->
+
+    <ListView
+        android:id="@id/lv_student_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/white" >
+    </ListView>
+
+</LinearLayout>

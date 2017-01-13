@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <!-- 作品名称 -->
+
+        <TextView
+            android:id="@id/tv_item_works_name"
+            style="@style/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/main_color"
+            android:text="作品名称 "
+             />
+        <!-- 时间 -->
+
+        <TextView
+            android:id="@id/tv_item_works_systime"
+            style="@style/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:text="2012-12-12" />
+    </LinearLayout>
+    <com.android.smartimage.SmartImageView
+        android:id="@id/siv_item_works_picurl"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@drawable/icon_logo" />
+
+
+</LinearLayout>

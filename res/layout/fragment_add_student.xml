@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    android:orientation="vertical"
+    tools:context=".activity.EditActivity" >
+
+    <TextView
+        android:id="@id/top_tip_add_studnet"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/main_color"
+        android:gravity="center"
+        android:text="@string/top_tip_add_studnet"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@id/ll_add_student"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@id/et_add_student_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/bg_shape_edit"
+            android:hint="@string/hint_add_student_name"
+            android:maxLines="1"
+            android:padding="3dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@id/et_add_student_stunum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/bg_shape_edit"
+            android:gravity="left"
+            android:hint="@string/hint_add_student_stunum"
+            android:padding="3dp"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@id/rg_add_student_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@id/rb_add_student_sex_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textColor="@color/gray_333" />
+
+            <RadioButton
+                android:id="@id/rb_add_student_sex_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="女"
+                android:textColor="@color/gray_333" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@id/btn_save_add_student"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_shape_round_green"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/text_btn_save"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@id/btn_cancel_add_student"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_shape_round_green"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/text_btn_cancel"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+   <RelativeLayout
+        android:id="@id/rl_main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/ll_main_bottom_bar" />
+
+    <LinearLayout
+        android:id="@id/ll_main_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/menu_bgcolor"
+        android:orientation="horizontal" >
+
+        <!-- 公告 -->
+
+        <LinearLayout
+            android:id="@id/ll_menu_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@id/iv_menu_message_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_menu_message_normal"
+                android:contentDescription="@string/app_name"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@id/tv_menu_message_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center_horizontal"
+                android:text="@string/menu_message_text"
+                android:textColor="@color/menu_nomarl"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- 考勤 -->
+
+        <LinearLayout
+            android:id="@id/ll_menu_attendance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@id/iv_menu_attendance_icon"
+                 android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_menu_attendance_normal"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@id/tv_menu_attendance_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center_horizontal"
+                android:text="@string/menu_attendance_text"
+                android:textColor="@color/menu_nomarl"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!--沟通 -->
+
+        <LinearLayout
+            android:id="@id/ll_menu_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@id/iv_menu_chat_icon"
+                 android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_menu_chat_normal"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@id/tv_menu_chat_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center_horizontal"
+                android:text="@string/menu_chat_text"
+                android:textColor="@color/menu_nomarl"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!--学生-->
+
+        <LinearLayout
+            android:id="@id/ll_menu_student"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@id/iv_menu_student_icon"
+                 android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_menu_student_normal"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@id/tv_menu_student_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center_horizontal"
+                android:text="@string/menu_student_text"
+                android:textColor="@color/menu_nomarl"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

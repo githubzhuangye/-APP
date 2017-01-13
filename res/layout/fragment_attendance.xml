@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_f8f8f8"
+    android:orientation="vertical" >
+
+    <!-- 设置头部 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/window_background"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/top_tip_student_list"
+            android:textColor="@color/main_color"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@id/btn_send_student_attendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_btn_shape_round_green"
+            android:layout_centerVertical="true"
+            android:padding="5.0dip"
+            android:text="@string/text_btn_send"
+            android:textColor="@color/white"
+            android:textSize="20.0dip" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@id/ll_search_student"
+            android:layout_width="fill_parent"
+            android:layout_height="44.0dip"
+            android:layout_marginTop="0.0dip"
+            android:background="@color/main_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@id/rl_search_student"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/base_discover_old_input"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <ImageView
+                    android:id="@id/iv_icon_search_student"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="6.0dip"
+                    android:paddingRight="8.0dip"
+                    android:src="@drawable/icon_search" />
+
+                <EditText
+                    android:id="@id/et_search_student"
+                    android:layout_width="fill_parent"
+                    android:layout_height="28.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_icon_search_student"
+                    android:background="@null"
+                    android:dropDownSelector="@color/white"
+                    android:hint="学生搜索"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_999"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@id/tv_search_student_btn"
+                android:layout_width="52.0dip"
+                android:layout_height="28.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="0.0"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@color/white"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <!-- 学生姓名 -->
+
+        <TextView
+            android:id="@id/tv_item_student_name_text"
+            style="@style/item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="@string/text_student_name"
+            android:textColor="@color/gray_333"
+            android:textSize="14sp" />
+        <!-- 学生学号 -->
+
+        <TextView
+            android:id="@id/tv_item_student_stunum_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="@string/text_student_stunum"
+            android:textColor="@color/gray_333"
+            android:textSize="14sp" />
+
+        <!-- 操作 -->
+
+        <TextView
+            android:id="@id/tv_item_student_operate_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="@string/text_oprate"
+            android:textColor="@color/gray_333"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!-- 学生列表 -->
+
+    <ListView
+        android:id="@id/lv_student_attendance_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/white" >
+    </ListView>
+
+</LinearLayout>

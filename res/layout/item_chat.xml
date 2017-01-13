@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/window_background"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@id/siv_item_chat_user_picurl"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/icon_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <!-- 聊天用户名 -->
+
+            <TextView
+                android:id="@id/tv_item_chat_user_name"
+                style="@style/item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zhuangye" />
+
+            <!-- 时间 -->
+
+            <TextView
+                android:id="@id/tv_item_chat_systime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="2012-12-12"
+                android:textColor="@color/main_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/tv_item_chat_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="12"
+            android:textColor="@color/main_color" />
+    </LinearLayout>
+
+</LinearLayout>
